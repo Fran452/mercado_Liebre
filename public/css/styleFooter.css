@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    line-height: auto;
+}
+
 footer{
     font-family: 'Roboto', sans-serif;
 }
@@ -22,15 +29,14 @@ footer section i{
     footer{
         display: flex;
         flex-wrap: wrap;
-        width: 100vw;
+        max-width: 100vw;
         justify-content: center;
     }
     #copyright{
-        position: relative;
-        right: 30%;
+        width: 100%;   
         padding-bottom: 20px;
     }
     footer section{
-        width: 20%;
+        width: 25%;
     }
 }

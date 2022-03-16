@@ -112,7 +112,7 @@ main form{
     .superior-header{
         display: flex;
     }
-    .superior-header img{
+    .superior-header a{
         width: 50%;
     }
 }   
@@ -145,7 +145,7 @@ main form{
         font-size: 20px;
         margin-left: 3px;
     }
-    .superior-header img{
+    .superior-header a{
         width: 30%;
     }
     .buscador{
