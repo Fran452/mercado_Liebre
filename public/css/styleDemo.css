@@ -1,0 +1,37 @@
+body{
+    box-sizing: border-box;
+    background: #aaaa;
+    
+}
+
+header{
+    background-color: yellow;
+    padding: 10%;
+}
+#barraDeTarea{
+    display: none;
+}
+.logo{
+    width: 100px;
+    display: block;
+
+}
+.texto{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botton-header{
+    display: block;
+    background-color: rgb(98, 98, 233);
+    text-align: center;
+    max-width: 10%;
+    padding: 10px 0;
+    margin: auto;
+    font-size: 20px;
+}
+
+.inferor-head ul{   
+    list-style: none;
+}

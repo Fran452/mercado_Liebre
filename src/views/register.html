@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    
+    
+    <link rel="stylesheet" href="/css/stylesRegister.css">
+    <link rel="stylesheet" href="/css/styleHeader.css">
+    <link rel="stylesheet" href="/css/styleFooter.css">
+    <title>MercadoLiebre</title>
+</head>
+<body>
+    <header class = "main-header">
+
+        <div class = "superior-header">
+          <img src="/img/logo-mercado-liebre.svg" class ="logo" title = "logo">
+     
+          <div class="buscador"> 
+            <input id = "campoDeBusqueda"type= "search" name = "buscador" placeholder="Buscar producto marca">
+            <input type="submit" value="Buscar">
+          </div>
+          
+          <h2 class="texto"> 
+            <i class="fa-solid fa-dollar-sign"></i>
+            Compra en cuotas o en credito
+          </h2>
+    
+         
+        </div>
+    
+        <div clas = "inferor-head"> 
+          <nav class="nav"> 
+              <ul id = "barraDeNavegacion"> 
+                <li> <a href="#">oferta</a> </li>
+                <li> <a href="#">Tiendas Oficiales</a></li>
+                <li> <a href="#">Vender</a></li>
+                <li> <a href="#">Ayuda</a></li>
+              </ul>
+           
+              <ul id = "opcionesDeCuenta">
+                <li> <a href="./register">Crea tu cuenta</a> <i class="fa-solid fa-user"></i> </li>
+                <li> <a href="./login">Ingresá</a><i class="fa-solid fa-user-pen"></i> </li>
+                <li> <a href="#">Mis Compras</a><i class="fa-solid fa-cart-shopping"></i></li>
+              </ul>
+          </nav>
+        </div>
+    
+        <a href="#" class="botton-header"><i class="fa-solid fa-bars"></i></a>
+        
+    </header>
+    <main>
+        <form action="/" method="post">
+            <label for="nombre"> ingrese su nombre y apellido: </label>
+            <input type="text" name="nombre" id="nombre" minlength="3" required>
+            <span>El nombre tiene que tener minimo 3 caracteres</span> 
+           
+            <label for="usuario"> Ingrese un nombre de usuario: </label>
+            <input type="text" name = "usuario" id="usuario" minlength="3" required>
+            <span>El usuario tiene que tener minimo 3 caracteres</span> 
+
+            <label for="fechaDeNacimiento"> Ingrese su fecha de nacimiento: </label>
+            <input type="date" name = "fechaDeNacimiento" id = "fechaDeNacimiento">
+
+            <label for="direccion"> ingrese su direccion:</label>
+            <input type="text" name="direccion" id="direccion" minlength="3" required>
+            <span>El direccion tiene que tener minimo 3 caracteres</span> 
+
+            <label for="tipoDePerfil">ingrese perfil de usuario: </label>
+            <div class="option">
+                <label><input name = "tipoDePerfil" type = "radio" value= "vendedor"> vendedor</label>
+                <label><input name = "tipoDePerfil" type = "radio" value= "comprador"> comprador</label> 
+            </div>
+            
+            <label for="categoriaDeInteres"> Ingrese cual de estas categorias son de su interes: </label>
+            <div class="option">
+                <label><input name = "categoriaDeInteres" type = "checkbox" value= "Electro">Electro</label>  
+                <label><input name = "categoriaDeInteres" type = "checkbox" value= "Moda"> Moda</label>   
+                <label><input name = "categoriaDeInteres" type = "checkbox" value= "Hogar"> Hogar</label>
+                <label><input name = "categoriaDeInteres" type = "checkbox" value= "Juguetería"> Juguetería</label>
+                <label><input name = "categoriaDeInteres" type = "checkbox" value= "Vida sana"> Vida sana</label>
+            </div>
+            
+              
+            <label for="fotoDeUsuario"> ingrese una foto de usuario</label>
+            <input type="file" name="fotoDeUsuario" id="fotoDeUsuario" accept = ".jpg">
+
+            <label for="contraseña">ingrese su contraseña: </label>
+            <input type="password" name="contraseña" id="contraseña" minlength="8" required>
+            <span>La contraseña debe tener al menos 8 caracteres</span> 
+
+            <label for="confirmacionContra">repita su contraseña: </label>
+            <input type="password" name="confirmacionContra" id="confirmacionContra">
+
+            <button type="submit">Enviar Formulario</button>
+            <button type="reset">Reiniciar Formulario</button>
+            
+        </form>
+
+    </main>
+
+    <footer>
+        <section>
+          <i class="fa-solid fa-credit-card"></i>
+          <h4> Envío gratis desde $ 2.500</h4>
+          <p> Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+    
+        <section>
+          <i class="fa-solid fa-gift"></i>
+          <h4> Envío gratis desde $ 2.500 </h4>
+          <p> Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+    
+        <section>
+          <i class="fa-solid fa-user-lock"></i>
+          <h4> Seguridad, de principio a fin </h4>
+          <p> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,porque estás siempre protegid@.</p>
+        </section>
+    
+        <strong id="copyright"> Copyright © 1999-2020 MercadoLiebre S.R.L. </strong>
+    
+      </footer>
+</body>
+</html>

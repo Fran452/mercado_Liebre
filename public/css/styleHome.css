@@ -1,0 +1,152 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Familia: 'Roboto'
+
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris--oscuro: #666;
+    --gris--claro: #ddd7d7;
+    --verde: #39b54a;
+    --text-main: 12px;
+    --text-titles: 24px;
+    --text-discount:16px;
+    --text-description: 16px
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    line-height: auto;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+main{
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--gris--claro);
+}
+
+main section article{
+    margin: 10px;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.preciolinea{
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precioProducto{
+   display: block;
+    position: relative;
+}
+.precio{
+    flex-grow: 0.30;
+}
+.oferta{
+    flex-grow: 0.70;
+    color: var(--verde);
+}
+
+.botton-truck{
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: #39b54a 1px solid;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: 20%;
+    left: 80%;
+}
+
+main h3{
+    font-size:24px;
+    color: var(--gris--oscuro);
+    margin: 10px;
+}
+
+main section article:hover .precioProducto .botton-truck{
+    animation: giro90grados 3s infinite;
+
+}
+/*Adaptativo*/
+
+
+@media(min-width:481px){
+    .descripcionProducto:hover{
+        display:block;
+        transition: display, 2s;
+    }
+    
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article{
+        width: 45%;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .botton-truck{
+        bottom: 90%;
+        left: 80%;
+    }
+
+}   
+
+@media(min-width:1024px){
+    main section article:hover  .descripcionProducto{
+        display: block;
+        transition: display, 1s;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article{
+        width: 22%;
+    }
+
+}
+
+@keyframes giro90grados{
+    0%{ 
+        transform: rotateZ(0deg);
+    }
+    100%{ 
+        transform: rotateZ(-90deg);
+    } 
+}

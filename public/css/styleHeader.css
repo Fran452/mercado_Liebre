@@ -1,0 +1,163 @@
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris--oscuro: #666;
+    --gris--claro: #ebebeb;
+    --verde: #39b54a;
+    --text-main: 12px;
+    --text-titles: 24px;
+    --text-discount:16px;
+    --text-description: 16px
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    line-height: auto;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    background-color:var(--gris--claro);
+}
+/* HEADER*/
+header{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--amarillo);
+    padding-bottom: 20px;
+}
+
+.superior-header{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buscador{
+    width: 50%;
+}
+.buscador input{
+    width: 100px;
+}
+.nav{
+    display: none;
+}
+
+.logo{
+    max-width: 50vw;
+}
+
+.buscador{
+    padding: 10px;
+}
+
+.texto{
+    text-align: center;
+    font-size: 12px
+}
+
+nav ul{
+    list-style: none; 
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+nav a{
+    font-size: 12px;
+}
+
+.descripcionProducto{
+    display: none;
+}
+
+.botton-header{
+    display: block;
+    width: 20%;
+    font-size: 40px;
+    text-align: center;
+    background-color: var(--celeste);
+    color: #fff;
+    margin: auto;
+    border-radius: 5px;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width:481px){
+    .nav{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: space-around;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav ul li{
+        margin: 5px;
+    }
+    .botton-header{
+        display: none;
+    }
+    .superior-header{
+        display: flex;
+    }
+    .superior-header img{
+        width: 50%;
+    }
+}   
+
+@media(min-width:1024px){
+
+    #campoDeBusqueda {
+        width: 70%;
+    }
+    .texto{
+        font-size: 20px;
+    }
+    .nav{
+        display:block;
+    }
+    .botton-header{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .nav ul{
+        margin: 0px;
+        width: 30%;
+        font-size: 20px;
+    }
+    .nav ul li a{
+        font-size: 20px;
+        margin-left: 3px;
+    }
+    .superior-header img{
+        width: 30%;
+    }
+    .buscador{
+        width: 30%;
+        align-self: center;
+        position: relative;
+        left: 5%;
+    }
+    .texto{
+        width: 30%;
+        align-self: center;
+    }
+
+
+}

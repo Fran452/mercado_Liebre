@@ -1,0 +1,69 @@
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris--oscuro: #666;
+    --gris--claro: #ebebeb;
+    --verde: #39b54a;
+    --text-main: 12px;
+    --text-titles: 24px;
+    --text-discount:16px;
+    --text-description: 16px
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-self: center;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    background-color: aliceblue;
+    padding: 5px;
+    position: relative;
+    bottom: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+
+main form label ~ input{
+    margin: 10px;
+    
+}
+
+main form input{
+    font-size: 20px;
+    width: 80%;
+    
+}
+main form button{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--celeste);
+    color: var(--gris--claro);
+    border-radius: 25px;
+}
+
+main p{
+    color: var(--amarillo);
+    background-color: var(--amarillo);
+    width: 100%;
+   font-size: 30px;
+}
+
+main form button:hover{
+    background-color: #0022AA;
+    transition: background-color,0.5s;
+}
