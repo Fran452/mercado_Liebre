@@ -1,12 +1,12 @@
 const express = require("express");
 const path = require("path");
-const id = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const publicPath = path.join(__dirname,"../","public");
 
 app.use(express.static(publicPath));
 
-app.listen(id, () => {
+app.listen(PORT, () => {
     console.log("Servidor en funcionamiento en el puerto "+ id);
 });
 
