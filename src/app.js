@@ -7,7 +7,7 @@ const publicPath = path.join(__dirname,"../","public");
 app.use(express.static(publicPath));
 
 app.listen(PORT, () => {
-    console.log("Servidor en funcionamiento en el puerto "+ id);
+    console.log("Servidor en funcionamiento en el puerto "+ PORT);
 });
 
 app.get('/', function(req,res){
